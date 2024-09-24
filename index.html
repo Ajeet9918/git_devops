@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Page</title>
+	<style>
+		/* Center the form and add some basic styling */
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f0f0f0;
+		}
+		
+		.container {
+			width: 50%;
+			margin: 40px auto;
+			background-color: #fff;
+			padding: 20px;
+			border: 1px solid #ddd;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		
+		.form-label {
+			display: block;
+			margin-bottom: 10px;
+		}
+		
+		.form-input {
+			width: 100%;
+			padding: 10px;
+			margin-bottom: 20px;
+			border: 1px solid #ccc;
+		}
+		
+		.form-select {
+			width: 100%;
+			padding: 10px;
+			margin-bottom: 20px;
+			border: 1px solid #ccc;
+		}
+		
+		.form-submit {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		
+		.form-submit:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Registration Page</h1>
+		<form>
+			<label class="form-label" for="name">Name:</label>
+			<input class="form-input" type="text" id="name" name="name"><br><br>
+			
+			<label class="form-label" for="age">Age:</label>
+			<input class="form-input" type="number" id="age" name="age"><br><br>
+			
+			<label class="form-label" for="registration_id">Registration ID:</label>
+			<input class="form-input" type="text" id="registration_id" name="registration_id"><br><br>
+			
+			<label class="form-label" for="gender">Gender:</label>
+			<select class="form-select" id="gender" name="gender">
+				<option value="male">Male</option>
+				<option value="female">Female</option>
+			</select><br><br>
+			
+			<label class="form-label" for="activity">Activity:</label>
+			<select class="form-select" id="activity" name="activity">
+				<option value="reading">Reading</option>
+				<option value="writing">Writing</option>
+				<option value="sports">Sports</option>
+				<option value="other">Other (please specify)</option>
+			</select><br><br>
+			
+			<input class="form-submit" type="submit" value="Register">
+		</form>
+	</div>
+</body>
+</html>
